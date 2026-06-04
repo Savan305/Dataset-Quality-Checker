@@ -1,0 +1,69 @@
+{
+  "dataset_info": {
+    "rows": 6,
+    "columns": 4,
+    "column_names": ["Name", "Age", "Salary", "Department"]
+  },
+
+  "missing_values": {
+    "Name": { "count": 0, "percentage": 0.0 },
+    "Age": { "count": 0, "percentage": 0.0 },
+    "Salary": { "count": 0, "percentage": 0.0 },
+    "Department": { "count": 0, "percentage": 0.0 }
+  },
+
+  "duplicates": {
+    "duplicate_count": 0,
+    "duplicate_indices": []
+  },
+
+  "datatypes": {
+    "column_types": {
+      "Name": "object",
+      "Age": "int64",
+      "Salary": "int64",
+      "Department": "object"
+    },
+    "numeric_columns": ["Age", "Salary"],
+    "categorical_columns": ["Name", "Department"],
+    "numeric_count": 2,
+    "categorical_count": 2
+  },
+
+  "outliers": {
+    "Age": 1,
+    "Salary": 1
+  },
+
+  "statistics": {
+    "Age": {
+      "mean": 29.0,
+      "median": 28.5,
+      "minimum": 25,
+      "maximum": 35,
+      "std": 3.41
+    },
+    "Salary": {
+      "mean": 215500.0,
+      "median": 59000.0,
+      "minimum": 50000,
+      "maximum": 1000000,
+      "std": 384381.97
+    }
+  },
+
+  "quality_score": {
+    "quality_score": 94,
+    "grade": "A"
+  },
+
+  "recommendations": [
+    "Investigate outliers in 'Age' column.",
+    "Investigate outliers in 'Salary' column."
+  ],
+
+  "charts": {
+    "missing_values_chart": "missing_values_chart.png",
+    "outliers_chart": "outliers_chart.png"
+  }
+}
