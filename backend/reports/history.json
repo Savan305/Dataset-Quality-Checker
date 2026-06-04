@@ -1,0 +1,1286 @@
+[
+  {
+    "id": "31fada1a-839c-4cde-9d04-f757dea29040",
+    "fileName": "heart.csv",
+    "filePath": "uploads/heart.csv",
+    "uploadedAt": "2026-06-04T10:32:25.180141Z",
+    "score": 98.28,
+    "grade": "A",
+    "analysis": {
+      "dataset_info": {
+        "rows": 918,
+        "columns": 12,
+        "column_names": [
+          "Age",
+          "Sex",
+          "ChestPainType",
+          "RestingBP",
+          "Cholesterol",
+          "FastingBS",
+          "RestingECG",
+          "MaxHR",
+          "ExerciseAngina",
+          "Oldpeak",
+          "ST_Slope",
+          "HeartDisease"
+        ]
+      },
+      "missing_values": {
+        "Age": {
+          "count": 0,
+          "percentage": 0.0
+        },
+        "Sex": {
+          "count": 0,
+          "percentage": 0.0
+        },
+        "ChestPainType": {
+          "count": 0,
+          "percentage": 0.0
+        },
+        "RestingBP": {
+          "count": 0,
+          "percentage": 0.0
+        },
+        "Cholesterol": {
+          "count": 0,
+          "percentage": 0.0
+        },
+        "FastingBS": {
+          "count": 0,
+          "percentage": 0.0
+        },
+        "RestingECG": {
+          "count": 0,
+          "percentage": 0.0
+        },
+        "MaxHR": {
+          "count": 0,
+          "percentage": 0.0
+        },
+        "ExerciseAngina": {
+          "count": 0,
+          "percentage": 0.0
+        },
+        "Oldpeak": {
+          "count": 0,
+          "percentage": 0.0
+        },
+        "ST_Slope": {
+          "count": 0,
+          "percentage": 0.0
+        },
+        "HeartDisease": {
+          "count": 0,
+          "percentage": 0.0
+        }
+      },
+      "duplicates": {
+        "duplicate_count": 0,
+        "duplicate_indices": []
+      },
+      "datatypes": {
+        "column_types": {
+          "Age": "int64",
+          "Sex": "str",
+          "ChestPainType": "str",
+          "RestingBP": "int64",
+          "Cholesterol": "int64",
+          "FastingBS": "int64",
+          "RestingECG": "str",
+          "MaxHR": "int64",
+          "ExerciseAngina": "str",
+          "Oldpeak": "float64",
+          "ST_Slope": "str",
+          "HeartDisease": "int64"
+        },
+        "numeric_columns": [
+          "Age",
+          "RestingBP",
+          "Cholesterol",
+          "FastingBS",
+          "MaxHR",
+          "Oldpeak",
+          "HeartDisease"
+        ],
+        "categorical_columns": [
+          "Sex",
+          "ChestPainType",
+          "RestingECG",
+          "ExerciseAngina",
+          "ST_Slope"
+        ],
+        "numeric_count": 7,
+        "categorical_count": 5
+      },
+      "outliers": {
+        "Age": 0,
+        "RestingBP": 28,
+        "Cholesterol": 183,
+        "FastingBS": 214,
+        "MaxHR": 2,
+        "Oldpeak": 16,
+        "HeartDisease": 0
+      },
+      "statistics": {
+        "Age": {
+          "mean": 53.51,
+          "median": 54.0,
+          "minimum": 28,
+          "maximum": 77,
+          "std": 9.43
+        },
+        "RestingBP": {
+          "mean": 132.4,
+          "median": 130.0,
+          "minimum": 0,
+          "maximum": 200,
+          "std": 18.51
+        },
+        "Cholesterol": {
+          "mean": 198.8,
+          "median": 223.0,
+          "minimum": 0,
+          "maximum": 603,
+          "std": 109.38
+        },
+        "FastingBS": {
+          "mean": 0.23,
+          "median": 0.0,
+          "minimum": 0,
+          "maximum": 1,
+          "std": 0.42
+        },
+        "MaxHR": {
+          "mean": 136.81,
+          "median": 138.0,
+          "minimum": 60,
+          "maximum": 202,
+          "std": 25.46
+        },
+        "Oldpeak": {
+          "mean": 0.89,
+          "median": 0.6,
+          "minimum": -2,
+          "maximum": 6,
+          "std": 1.07
+        },
+        "HeartDisease": {
+          "mean": 0.55,
+          "median": 1.0,
+          "minimum": 0,
+          "maximum": 1,
+          "std": 0.5
+        }
+      },
+      "quality_score": {
+        "quality_score": 98.28,
+        "grade": "A",
+        "penalty_breakdown": {
+          "missing_rate": 0.0,
+          "duplicate_rate": 0.0,
+          "outlier_rate": 6.89,
+          "missing_penalty": 0.0,
+          "duplicate_penalty": 0.0,
+          "outlier_penalty": 1.72
+        }
+      },
+      "recommendations": [
+        "Investigate outliers in 'RestingBP' column.",
+        "Investigate outliers in 'Cholesterol' column.",
+        "Investigate outliers in 'FastingBS' column.",
+        "Investigate outliers in 'MaxHR' column.",
+        "Investigate outliers in 'Oldpeak' column."
+      ],
+      "column_profiles": {
+        "Age": {
+          "dtype": "int64",
+          "missing_count": 0,
+          "missing_rate": 0.0,
+          "unique_count": 50,
+          "unique_rate": 5.45,
+          "outlier_count": 0,
+          "quality_score": 100.0,
+          "sample_values": [
+            "40",
+            "49",
+            "37",
+            "48",
+            "54"
+          ]
+        },
+        "Sex": {
+          "dtype": "str",
+          "missing_count": 0,
+          "missing_rate": 0.0,
+          "unique_count": 2,
+          "unique_rate": 0.22,
+          "outlier_count": 0,
+          "quality_score": 100.0,
+          "sample_values": [
+            "M",
+            "F",
+            "M",
+            "F",
+            "M"
+          ]
+        },
+        "ChestPainType": {
+          "dtype": "str",
+          "missing_count": 0,
+          "missing_rate": 0.0,
+          "unique_count": 4,
+          "unique_rate": 0.44,
+          "outlier_count": 0,
+          "quality_score": 100.0,
+          "sample_values": [
+            "ATA",
+            "NAP",
+            "ATA",
+            "ASY",
+            "NAP"
+          ]
+        },
+        "RestingBP": {
+          "dtype": "int64",
+          "missing_count": 0,
+          "missing_rate": 0.0,
+          "unique_count": 67,
+          "unique_rate": 7.3,
+          "outlier_count": 28,
+          "quality_score": 99.08,
+          "sample_values": [
+            "140",
+            "160",
+            "130",
+            "138",
+            "150"
+          ]
+        },
+        "Cholesterol": {
+          "dtype": "int64",
+          "missing_count": 0,
+          "missing_rate": 0.0,
+          "unique_count": 222,
+          "unique_rate": 24.18,
+          "outlier_count": 183,
+          "quality_score": 94.02,
+          "sample_values": [
+            "289",
+            "180",
+            "283",
+            "214",
+            "195"
+          ]
+        },
+        "FastingBS": {
+          "dtype": "int64",
+          "missing_count": 0,
+          "missing_rate": 0.0,
+          "unique_count": 2,
+          "unique_rate": 0.22,
+          "outlier_count": 214,
+          "quality_score": 93.01,
+          "sample_values": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "RestingECG": {
+          "dtype": "str",
+          "missing_count": 0,
+          "missing_rate": 0.0,
+          "unique_count": 3,
+          "unique_rate": 0.33,
+          "outlier_count": 0,
+          "quality_score": 100.0,
+          "sample_values": [
+            "Normal",
+            "Normal",
+            "ST",
+            "Normal",
+            "Normal"
+          ]
+        },
+        "MaxHR": {
+          "dtype": "int64",
+          "missing_count": 0,
+          "missing_rate": 0.0,
+          "unique_count": 119,
+          "unique_rate": 12.96,
+          "outlier_count": 2,
+          "quality_score": 99.93,
+          "sample_values": [
+            "172",
+            "156",
+            "98",
+            "108",
+            "122"
+          ]
+        },
+        "ExerciseAngina": {
+          "dtype": "str",
+          "missing_count": 0,
+          "missing_rate": 0.0,
+          "unique_count": 2,
+          "unique_rate": 0.22,
+          "outlier_count": 0,
+          "quality_score": 100.0,
+          "sample_values": [
+            "N",
+            "N",
+            "N",
+            "Y",
+            "N"
+          ]
+        },
+        "Oldpeak": {
+          "dtype": "float64",
+          "missing_count": 0,
+          "missing_rate": 0.0,
+          "unique_count": 53,
+          "unique_rate": 5.77,
+          "outlier_count": 16,
+          "quality_score": 99.48,
+          "sample_values": [
+            "0.0",
+            "1.0",
+            "0.0",
+            "1.5",
+            "0.0"
+          ]
+        },
+        "ST_Slope": {
+          "dtype": "str",
+          "missing_count": 0,
+          "missing_rate": 0.0,
+          "unique_count": 3,
+          "unique_rate": 0.33,
+          "outlier_count": 0,
+          "quality_score": 100.0,
+          "sample_values": [
+            "Up",
+            "Flat",
+            "Up",
+            "Flat",
+            "Up"
+          ]
+        },
+        "HeartDisease": {
+          "dtype": "int64",
+          "missing_count": 0,
+          "missing_rate": 0.0,
+          "unique_count": 2,
+          "unique_rate": 0.22,
+          "outlier_count": 0,
+          "quality_score": 100.0,
+          "sample_values": [
+            "0",
+            "1",
+            "0",
+            "1",
+            "0"
+          ]
+        }
+      },
+      "data_profile": {
+        "Age": {
+          "null_count": 0,
+          "unique_count": 50,
+          "mode": 54,
+          "minimum": 28,
+          "maximum": 77,
+          "mean": 53.51,
+          "median": 54.0,
+          "skewness": -0.2
+        },
+        "Sex": {
+          "null_count": 0,
+          "unique_count": 2,
+          "mode": "M"
+        },
+        "ChestPainType": {
+          "null_count": 0,
+          "unique_count": 4,
+          "mode": "ASY"
+        },
+        "RestingBP": {
+          "null_count": 0,
+          "unique_count": 67,
+          "mode": 120,
+          "minimum": 0,
+          "maximum": 200,
+          "mean": 132.4,
+          "median": 130.0,
+          "skewness": 0.18
+        },
+        "Cholesterol": {
+          "null_count": 0,
+          "unique_count": 222,
+          "mode": 0,
+          "minimum": 0,
+          "maximum": 603,
+          "mean": 198.8,
+          "median": 223.0,
+          "skewness": -0.61
+        },
+        "FastingBS": {
+          "null_count": 0,
+          "unique_count": 2,
+          "mode": 0,
+          "minimum": 0,
+          "maximum": 1,
+          "mean": 0.23,
+          "median": 0.0,
+          "skewness": 1.26
+        },
+        "RestingECG": {
+          "null_count": 0,
+          "unique_count": 3,
+          "mode": "Normal"
+        },
+        "MaxHR": {
+          "null_count": 0,
+          "unique_count": 119,
+          "mode": 150,
+          "minimum": 60,
+          "maximum": 202,
+          "mean": 136.81,
+          "median": 138.0,
+          "skewness": -0.14
+        },
+        "ExerciseAngina": {
+          "null_count": 0,
+          "unique_count": 2,
+          "mode": "N"
+        },
+        "Oldpeak": {
+          "null_count": 0,
+          "unique_count": 53,
+          "mode": 0.0,
+          "minimum": -2.6,
+          "maximum": 6.2,
+          "mean": 0.89,
+          "median": 0.6,
+          "skewness": 1.02
+        },
+        "ST_Slope": {
+          "null_count": 0,
+          "unique_count": 3,
+          "mode": "Flat"
+        },
+        "HeartDisease": {
+          "null_count": 0,
+          "unique_count": 2,
+          "mode": 1,
+          "minimum": 0,
+          "maximum": 1,
+          "mean": 0.55,
+          "median": 1.0,
+          "skewness": -0.22
+        }
+      },
+      "validation_issues": [],
+      "cleaning_plan": [
+        {
+          "column": "RestingBP",
+          "issue": "outliers",
+          "action": "Cap extreme values using IQR bounds"
+        },
+        {
+          "column": "Cholesterol",
+          "issue": "outliers",
+          "action": "Cap extreme values using IQR bounds"
+        },
+        {
+          "column": "FastingBS",
+          "issue": "outliers",
+          "action": "Cap extreme values using IQR bounds"
+        },
+        {
+          "column": "MaxHR",
+          "issue": "outliers",
+          "action": "Cap extreme values using IQR bounds"
+        },
+        {
+          "column": "Oldpeak",
+          "issue": "outliers",
+          "action": "Cap extreme values using IQR bounds"
+        }
+      ],
+      "ai_explanation": {
+        "summary": "The dataset is strong and ready for analysis with only light review.",
+        "drivers": [
+          "0 missing values detected.",
+          "0 duplicate rows detected.",
+          "443 outliers detected across numeric columns."
+        ],
+        "priority": "outliers"
+      },
+      "charts": {
+        "missing_values_chart": "missing_values_chart.png",
+        "outliers_chart": "outliers_chart.png"
+      }
+    }
+  },
+  {
+    "id": "16b5af43-28de-40c2-9086-151f12c91e49",
+    "fileName": "student.csv",
+    "filePath": "uploads/student.csv",
+    "uploadedAt": "2026-06-04T10:31:51.639438Z",
+    "score": 99.61,
+    "grade": "A",
+    "analysis": {
+      "dataset_info": {
+        "rows": 6607,
+        "columns": 20,
+        "column_names": [
+          "Hours_Studied",
+          "Attendance",
+          "Parental_Involvement",
+          "Access_to_Resources",
+          "Extracurricular_Activities",
+          "Sleep_Hours",
+          "Previous_Scores",
+          "Motivation_Level",
+          "Internet_Access",
+          "Tutoring_Sessions",
+          "Family_Income",
+          "Teacher_Quality",
+          "School_Type",
+          "Peer_Influence",
+          "Physical_Activity",
+          "Learning_Disabilities",
+          "Parental_Education_Level",
+          "Distance_from_Home",
+          "Gender",
+          "Exam_Score"
+        ]
+      },
+      "missing_values": {
+        "Hours_Studied": {
+          "count": 0,
+          "percentage": 0.0
+        },
+        "Attendance": {
+          "count": 0,
+          "percentage": 0.0
+        },
+        "Parental_Involvement": {
+          "count": 0,
+          "percentage": 0.0
+        },
+        "Access_to_Resources": {
+          "count": 0,
+          "percentage": 0.0
+        },
+        "Extracurricular_Activities": {
+          "count": 0,
+          "percentage": 0.0
+        },
+        "Sleep_Hours": {
+          "count": 0,
+          "percentage": 0.0
+        },
+        "Previous_Scores": {
+          "count": 0,
+          "percentage": 0.0
+        },
+        "Motivation_Level": {
+          "count": 0,
+          "percentage": 0.0
+        },
+        "Internet_Access": {
+          "count": 0,
+          "percentage": 0.0
+        },
+        "Tutoring_Sessions": {
+          "count": 0,
+          "percentage": 0.0
+        },
+        "Family_Income": {
+          "count": 0,
+          "percentage": 0.0
+        },
+        "Teacher_Quality": {
+          "count": 78,
+          "percentage": 1.18
+        },
+        "School_Type": {
+          "count": 0,
+          "percentage": 0.0
+        },
+        "Peer_Influence": {
+          "count": 0,
+          "percentage": 0.0
+        },
+        "Physical_Activity": {
+          "count": 0,
+          "percentage": 0.0
+        },
+        "Learning_Disabilities": {
+          "count": 0,
+          "percentage": 0.0
+        },
+        "Parental_Education_Level": {
+          "count": 90,
+          "percentage": 1.36
+        },
+        "Distance_from_Home": {
+          "count": 67,
+          "percentage": 1.01
+        },
+        "Gender": {
+          "count": 0,
+          "percentage": 0.0
+        },
+        "Exam_Score": {
+          "count": 0,
+          "percentage": 0.0
+        }
+      },
+      "duplicates": {
+        "duplicate_count": 0,
+        "duplicate_indices": []
+      },
+      "datatypes": {
+        "column_types": {
+          "Hours_Studied": "int64",
+          "Attendance": "int64",
+          "Parental_Involvement": "str",
+          "Access_to_Resources": "str",
+          "Extracurricular_Activities": "str",
+          "Sleep_Hours": "int64",
+          "Previous_Scores": "int64",
+          "Motivation_Level": "str",
+          "Internet_Access": "str",
+          "Tutoring_Sessions": "int64",
+          "Family_Income": "str",
+          "Teacher_Quality": "str",
+          "School_Type": "str",
+          "Peer_Influence": "str",
+          "Physical_Activity": "int64",
+          "Learning_Disabilities": "str",
+          "Parental_Education_Level": "str",
+          "Distance_from_Home": "str",
+          "Gender": "str",
+          "Exam_Score": "int64"
+        },
+        "numeric_columns": [
+          "Hours_Studied",
+          "Attendance",
+          "Sleep_Hours",
+          "Previous_Scores",
+          "Tutoring_Sessions",
+          "Physical_Activity",
+          "Exam_Score"
+        ],
+        "categorical_columns": [
+          "Parental_Involvement",
+          "Access_to_Resources",
+          "Extracurricular_Activities",
+          "Motivation_Level",
+          "Internet_Access",
+          "Family_Income",
+          "Teacher_Quality",
+          "School_Type",
+          "Peer_Influence",
+          "Learning_Disabilities",
+          "Parental_Education_Level",
+          "Distance_from_Home",
+          "Gender"
+        ],
+        "numeric_count": 7,
+        "categorical_count": 13
+      },
+      "outliers": {
+        "Hours_Studied": 43,
+        "Attendance": 0,
+        "Sleep_Hours": 0,
+        "Previous_Scores": 0,
+        "Tutoring_Sessions": 430,
+        "Physical_Activity": 0,
+        "Exam_Score": 104
+      },
+      "statistics": {
+        "Hours_Studied": {
+          "mean": 19.98,
+          "median": 20.0,
+          "minimum": 1,
+          "maximum": 44,
+          "std": 5.99
+        },
+        "Attendance": {
+          "mean": 79.98,
+          "median": 80.0,
+          "minimum": 60,
+          "maximum": 100,
+          "std": 11.55
+        },
+        "Sleep_Hours": {
+          "mean": 7.03,
+          "median": 7.0,
+          "minimum": 4,
+          "maximum": 10,
+          "std": 1.47
+        },
+        "Previous_Scores": {
+          "mean": 75.07,
+          "median": 75.0,
+          "minimum": 50,
+          "maximum": 100,
+          "std": 14.4
+        },
+        "Tutoring_Sessions": {
+          "mean": 1.49,
+          "median": 1.0,
+          "minimum": 0,
+          "maximum": 8,
+          "std": 1.23
+        },
+        "Physical_Activity": {
+          "mean": 2.97,
+          "median": 3.0,
+          "minimum": 0,
+          "maximum": 6,
+          "std": 1.03
+        },
+        "Exam_Score": {
+          "mean": 67.24,
+          "median": 67.0,
+          "minimum": 55,
+          "maximum": 101,
+          "std": 3.89
+        }
+      },
+      "quality_score": {
+        "quality_score": 99.61,
+        "grade": "A",
+        "penalty_breakdown": {
+          "missing_rate": 0.18,
+          "duplicate_rate": 0.0,
+          "outlier_rate": 1.25,
+          "missing_penalty": 0.08,
+          "duplicate_penalty": 0.0,
+          "outlier_penalty": 0.31
+        }
+      },
+      "recommendations": [
+        "Handle missing values in 'Teacher_Quality' column.",
+        "Handle missing values in 'Parental_Education_Level' column.",
+        "Handle missing values in 'Distance_from_Home' column.",
+        "Investigate outliers in 'Hours_Studied' column.",
+        "Investigate outliers in 'Tutoring_Sessions' column.",
+        "Investigate outliers in 'Exam_Score' column."
+      ],
+      "column_profiles": {
+        "Hours_Studied": {
+          "dtype": "int64",
+          "missing_count": 0,
+          "missing_rate": 0.0,
+          "unique_count": 41,
+          "unique_rate": 0.62,
+          "outlier_count": 43,
+          "quality_score": 99.8,
+          "sample_values": [
+            "23",
+            "19",
+            "24",
+            "29",
+            "19"
+          ]
+        },
+        "Attendance": {
+          "dtype": "int64",
+          "missing_count": 0,
+          "missing_rate": 0.0,
+          "unique_count": 41,
+          "unique_rate": 0.62,
+          "outlier_count": 0,
+          "quality_score": 100.0,
+          "sample_values": [
+            "84",
+            "64",
+            "98",
+            "89",
+            "92"
+          ]
+        },
+        "Parental_Involvement": {
+          "dtype": "str",
+          "missing_count": 0,
+          "missing_rate": 0.0,
+          "unique_count": 3,
+          "unique_rate": 0.05,
+          "outlier_count": 0,
+          "quality_score": 100.0,
+          "sample_values": [
+            "Low",
+            "Low",
+            "Medium",
+            "Low",
+            "Medium"
+          ]
+        },
+        "Access_to_Resources": {
+          "dtype": "str",
+          "missing_count": 0,
+          "missing_rate": 0.0,
+          "unique_count": 3,
+          "unique_rate": 0.05,
+          "outlier_count": 0,
+          "quality_score": 100.0,
+          "sample_values": [
+            "High",
+            "Medium",
+            "Medium",
+            "Medium",
+            "Medium"
+          ]
+        },
+        "Extracurricular_Activities": {
+          "dtype": "str",
+          "missing_count": 0,
+          "missing_rate": 0.0,
+          "unique_count": 2,
+          "unique_rate": 0.03,
+          "outlier_count": 0,
+          "quality_score": 100.0,
+          "sample_values": [
+            "No",
+            "No",
+            "Yes",
+            "Yes",
+            "Yes"
+          ]
+        },
+        "Sleep_Hours": {
+          "dtype": "int64",
+          "missing_count": 0,
+          "missing_rate": 0.0,
+          "unique_count": 7,
+          "unique_rate": 0.11,
+          "outlier_count": 0,
+          "quality_score": 100.0,
+          "sample_values": [
+            "7",
+            "8",
+            "7",
+            "8",
+            "6"
+          ]
+        },
+        "Previous_Scores": {
+          "dtype": "int64",
+          "missing_count": 0,
+          "missing_rate": 0.0,
+          "unique_count": 51,
+          "unique_rate": 0.77,
+          "outlier_count": 0,
+          "quality_score": 100.0,
+          "sample_values": [
+            "73",
+            "59",
+            "91",
+            "98",
+            "65"
+          ]
+        },
+        "Motivation_Level": {
+          "dtype": "str",
+          "missing_count": 0,
+          "missing_rate": 0.0,
+          "unique_count": 3,
+          "unique_rate": 0.05,
+          "outlier_count": 0,
+          "quality_score": 100.0,
+          "sample_values": [
+            "Low",
+            "Low",
+            "Medium",
+            "Medium",
+            "Medium"
+          ]
+        },
+        "Internet_Access": {
+          "dtype": "str",
+          "missing_count": 0,
+          "missing_rate": 0.0,
+          "unique_count": 2,
+          "unique_rate": 0.03,
+          "outlier_count": 0,
+          "quality_score": 100.0,
+          "sample_values": [
+            "Yes",
+            "Yes",
+            "Yes",
+            "Yes",
+            "Yes"
+          ]
+        },
+        "Tutoring_Sessions": {
+          "dtype": "int64",
+          "missing_count": 0,
+          "missing_rate": 0.0,
+          "unique_count": 9,
+          "unique_rate": 0.14,
+          "outlier_count": 430,
+          "quality_score": 98.05,
+          "sample_values": [
+            "0",
+            "2",
+            "2",
+            "1",
+            "3"
+          ]
+        },
+        "Family_Income": {
+          "dtype": "str",
+          "missing_count": 0,
+          "missing_rate": 0.0,
+          "unique_count": 3,
+          "unique_rate": 0.05,
+          "outlier_count": 0,
+          "quality_score": 100.0,
+          "sample_values": [
+            "Low",
+            "Medium",
+            "Medium",
+            "Medium",
+            "Medium"
+          ]
+        },
+        "Teacher_Quality": {
+          "dtype": "str",
+          "missing_count": 78,
+          "missing_rate": 1.18,
+          "unique_count": 3,
+          "unique_rate": 0.05,
+          "outlier_count": 0,
+          "quality_score": 99.47,
+          "sample_values": [
+            "Medium",
+            "Medium",
+            "Medium",
+            "Medium",
+            "High"
+          ]
+        },
+        "School_Type": {
+          "dtype": "str",
+          "missing_count": 0,
+          "missing_rate": 0.0,
+          "unique_count": 2,
+          "unique_rate": 0.03,
+          "outlier_count": 0,
+          "quality_score": 100.0,
+          "sample_values": [
+            "Public",
+            "Public",
+            "Public",
+            "Public",
+            "Public"
+          ]
+        },
+        "Peer_Influence": {
+          "dtype": "str",
+          "missing_count": 0,
+          "missing_rate": 0.0,
+          "unique_count": 3,
+          "unique_rate": 0.05,
+          "outlier_count": 0,
+          "quality_score": 100.0,
+          "sample_values": [
+            "Positive",
+            "Negative",
+            "Neutral",
+            "Negative",
+            "Neutral"
+          ]
+        },
+        "Physical_Activity": {
+          "dtype": "int64",
+          "missing_count": 0,
+          "missing_rate": 0.0,
+          "unique_count": 7,
+          "unique_rate": 0.11,
+          "outlier_count": 0,
+          "quality_score": 100.0,
+          "sample_values": [
+            "3",
+            "4",
+            "4",
+            "4",
+            "4"
+          ]
+        },
+        "Learning_Disabilities": {
+          "dtype": "str",
+          "missing_count": 0,
+          "missing_rate": 0.0,
+          "unique_count": 2,
+          "unique_rate": 0.03,
+          "outlier_count": 0,
+          "quality_score": 100.0,
+          "sample_values": [
+            "No",
+            "No",
+            "No",
+            "No",
+            "No"
+          ]
+        },
+        "Parental_Education_Level": {
+          "dtype": "str",
+          "missing_count": 90,
+          "missing_rate": 1.36,
+          "unique_count": 3,
+          "unique_rate": 0.05,
+          "outlier_count": 0,
+          "quality_score": 99.39,
+          "sample_values": [
+            "High School",
+            "College",
+            "Postgraduate",
+            "High School",
+            "College"
+          ]
+        },
+        "Distance_from_Home": {
+          "dtype": "str",
+          "missing_count": 67,
+          "missing_rate": 1.01,
+          "unique_count": 3,
+          "unique_rate": 0.05,
+          "outlier_count": 0,
+          "quality_score": 99.54,
+          "sample_values": [
+            "Near",
+            "Moderate",
+            "Near",
+            "Moderate",
+            "Near"
+          ]
+        },
+        "Gender": {
+          "dtype": "str",
+          "missing_count": 0,
+          "missing_rate": 0.0,
+          "unique_count": 2,
+          "unique_rate": 0.03,
+          "outlier_count": 0,
+          "quality_score": 100.0,
+          "sample_values": [
+            "Male",
+            "Female",
+            "Male",
+            "Male",
+            "Female"
+          ]
+        },
+        "Exam_Score": {
+          "dtype": "int64",
+          "missing_count": 0,
+          "missing_rate": 0.0,
+          "unique_count": 45,
+          "unique_rate": 0.68,
+          "outlier_count": 104,
+          "quality_score": 99.53,
+          "sample_values": [
+            "67",
+            "61",
+            "74",
+            "71",
+            "70"
+          ]
+        }
+      },
+      "data_profile": {
+        "Hours_Studied": {
+          "null_count": 0,
+          "unique_count": 41,
+          "mode": 20,
+          "minimum": 1,
+          "maximum": 44,
+          "mean": 19.98,
+          "median": 20.0,
+          "skewness": 0.01
+        },
+        "Attendance": {
+          "null_count": 0,
+          "unique_count": 41,
+          "mode": 67,
+          "minimum": 60,
+          "maximum": 100,
+          "mean": 79.98,
+          "median": 80.0,
+          "skewness": 0.01
+        },
+        "Parental_Involvement": {
+          "null_count": 0,
+          "unique_count": 3,
+          "mode": "Medium"
+        },
+        "Access_to_Resources": {
+          "null_count": 0,
+          "unique_count": 3,
+          "mode": "Medium"
+        },
+        "Extracurricular_Activities": {
+          "null_count": 0,
+          "unique_count": 2,
+          "mode": "Yes"
+        },
+        "Sleep_Hours": {
+          "null_count": 0,
+          "unique_count": 7,
+          "mode": 7,
+          "minimum": 4,
+          "maximum": 10,
+          "mean": 7.03,
+          "median": 7.0,
+          "skewness": -0.02
+        },
+        "Previous_Scores": {
+          "null_count": 0,
+          "unique_count": 51,
+          "mode": 66,
+          "minimum": 50,
+          "maximum": 100,
+          "mean": 75.07,
+          "median": 75.0,
+          "skewness": -0.0
+        },
+        "Motivation_Level": {
+          "null_count": 0,
+          "unique_count": 3,
+          "mode": "Medium"
+        },
+        "Internet_Access": {
+          "null_count": 0,
+          "unique_count": 2,
+          "mode": "Yes"
+        },
+        "Tutoring_Sessions": {
+          "null_count": 0,
+          "unique_count": 9,
+          "mode": 1,
+          "minimum": 0,
+          "maximum": 8,
+          "mean": 1.49,
+          "median": 1.0,
+          "skewness": 0.82
+        },
+        "Family_Income": {
+          "null_count": 0,
+          "unique_count": 3,
+          "mode": "Low"
+        },
+        "Teacher_Quality": {
+          "null_count": 78,
+          "unique_count": 3,
+          "mode": "Medium"
+        },
+        "School_Type": {
+          "null_count": 0,
+          "unique_count": 2,
+          "mode": "Public"
+        },
+        "Peer_Influence": {
+          "null_count": 0,
+          "unique_count": 3,
+          "mode": "Positive"
+        },
+        "Physical_Activity": {
+          "null_count": 0,
+          "unique_count": 7,
+          "mode": 3,
+          "minimum": 0,
+          "maximum": 6,
+          "mean": 2.97,
+          "median": 3.0,
+          "skewness": -0.03
+        },
+        "Learning_Disabilities": {
+          "null_count": 0,
+          "unique_count": 2,
+          "mode": "No"
+        },
+        "Parental_Education_Level": {
+          "null_count": 90,
+          "unique_count": 3,
+          "mode": "High School"
+        },
+        "Distance_from_Home": {
+          "null_count": 67,
+          "unique_count": 3,
+          "mode": "Near"
+        },
+        "Gender": {
+          "null_count": 0,
+          "unique_count": 2,
+          "mode": "Male"
+        },
+        "Exam_Score": {
+          "null_count": 0,
+          "unique_count": 45,
+          "mode": 68,
+          "minimum": 55,
+          "maximum": 101,
+          "mean": 67.24,
+          "median": 67.0,
+          "skewness": 1.64
+        }
+      },
+      "validation_issues": [],
+      "cleaning_plan": [
+        {
+          "column": "Teacher_Quality",
+          "issue": "missing_values",
+          "action": "Fill blanks with mode"
+        },
+        {
+          "column": "Parental_Education_Level",
+          "issue": "missing_values",
+          "action": "Fill blanks with mode"
+        },
+        {
+          "column": "Distance_from_Home",
+          "issue": "missing_values",
+          "action": "Fill blanks with mode"
+        },
+        {
+          "column": "Hours_Studied",
+          "issue": "outliers",
+          "action": "Cap extreme values using IQR bounds"
+        },
+        {
+          "column": "Tutoring_Sessions",
+          "issue": "outliers",
+          "action": "Cap extreme values using IQR bounds"
+        },
+        {
+          "column": "Exam_Score",
+          "issue": "outliers",
+          "action": "Cap extreme values using IQR bounds"
+        }
+      ],
+      "ai_explanation": {
+        "summary": "The dataset is strong and ready for analysis with only light review.",
+        "drivers": [
+          "235 missing values detected.",
+          "0 duplicate rows detected.",
+          "577 outliers detected across numeric columns."
+        ],
+        "priority": "outliers"
+      },
+      "charts": {
+        "missing_values_chart": "missing_values_chart.png",
+        "outliers_chart": "outliers_chart.png"
+      }
+    }
+  }
+]

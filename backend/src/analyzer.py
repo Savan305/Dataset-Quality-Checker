@@ -7,6 +7,13 @@ from src.outlier_checker import detect_outliers
 from src.statistics_checker import generate_statistics
 from src.quality_score import calculate_quality_score
 from src.recommendation_engine import generate_recommendations
+from src.advanced_profiler import (
+    detect_validation_issues,
+    generate_ai_explanation,
+    generate_cleaning_plan,
+    generate_column_profiles,
+    generate_data_profile
+)
 
 
 # Optional (only if you added charts later)
@@ -40,11 +47,35 @@ def analyze_dataset(file_path: str):
     quality_result = calculate_quality_score(
         missing_result,
         duplicate_result,
-        outlier_result
+        outlier_result,
+        row_count=len(df),
+        column_count=len(df.columns),
+        numeric_count=datatype_result["numeric_count"]
     )
 
     # ================= RECOMMENDATIONS =================
     recommendation_result = generate_recommendations(
+        missing_result,
+        duplicate_result,
+        outlier_result
+    )
+
+    column_profiles = generate_column_profiles(
+        df,
+        missing_result,
+        outlier_result
+    )
+
+    data_profile = generate_data_profile(df)
+    validation_issues = detect_validation_issues(df)
+    cleaning_plan = generate_cleaning_plan(
+        missing_result,
+        duplicate_result,
+        outlier_result,
+        datatype_result
+    )
+    ai_explanation = generate_ai_explanation(
+        quality_result,
         missing_result,
         duplicate_result,
         outlier_result
@@ -81,6 +112,11 @@ def analyze_dataset(file_path: str):
 
         "quality_score": quality_result,
         "recommendations": recommendation_result,
+        "column_profiles": column_profiles,
+        "data_profile": data_profile,
+        "validation_issues": validation_issues,
+        "cleaning_plan": cleaning_plan,
+        "ai_explanation": ai_explanation,
 
         "charts": charts
     }
