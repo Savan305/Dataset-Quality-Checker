@@ -2,107 +2,86 @@
 
 <div align="center">
 
-### AI-Powered Data Quality Assessment & Profiling Platform
+### Assess • Validate • Improve
 
-Analyze, Validate, Score, and Improve Dataset Quality Before Machine Learning & Analytics Workflows.
+AI-Powered Data Quality Assessment Platform built with **React, FastAPI, Pandas, and Machine Learning**
 
-![React](https://img.shields.io/badge/Frontend-React-blue)
-![Vite](https://img.shields.io/badge/Build-Vite-purple)
-![FastAPI](https://img.shields.io/badge/Backend-FastAPI-green)
-![Python](https://img.shields.io/badge/Python-3.10+-yellow)
-![Pandas](https://img.shields.io/badge/Data-Pandas-orange)
-![Machine Learning](https://img.shields.io/badge/ML-Ready-red)
+![React](https://img.shields.io/badge/Frontend-React-61DAFB?logo=react)
+![FastAPI](https://img.shields.io/badge/Backend-FastAPI-009688?logo=fastapi)
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python)
+![Pandas](https://img.shields.io/badge/Pandas-150458?logo=pandas)
+![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite)
 ![Status](https://img.shields.io/badge/Status-Completed-success)
-
-🚀 Full Stack Data Quality Platform • 📈 Interactive Dashboard • 📄 Automated PDF Reports • 🧠 Intelligent Recommendations
 
 </div>
 
 ---
 
-## 🌟 Overview
+## 🚀 Overview
 
-Dataset Quality Checker is a Full-Stack Data Quality Assessment Platform designed to help Data Scientists, Machine Learning Engineers, Data Analysts, and Researchers evaluate dataset health before model development and business analytics.
+Dataset Quality Checker is a Full-Stack Data Quality Assessment Platform that helps Data Scientists, Data Analysts, and Machine Learning Engineers evaluate dataset quality before model training and analytics workflows.
 
-The platform automatically analyzes uploaded CSV datasets and generates comprehensive quality insights including missing values, duplicates, outliers, datatype validation, statistical profiling, quality scoring, and actionable recommendations.
-
-Instead of manually checking dataset quality, users can upload a dataset and instantly receive a professional analysis report with visualizations and improvement suggestions.
+The system automatically analyzes uploaded CSV datasets and generates quality metrics, statistical insights, visual reports, and actionable recommendations to improve dataset reliability.
 
 ---
 
-## 🎯 Problem Statement
+## ✨ Features
 
-Poor-quality datasets can significantly impact:
-
-* Machine Learning Model Performance
-* Business Intelligence Accuracy
-* Data Analytics Results
-* Research Outcomes
-* Decision-Making Processes
-
-Dataset Quality Checker addresses these challenges by providing an automated and scalable quality assessment workflow.
-
----
-
-## ✨ Key Features
-
-| Feature                       | Description                                        |
-| ----------------------------- | -------------------------------------------------- |
-| 📂 Dataset Upload             | Upload CSV datasets through an intuitive interface |
-| 📊 Quality Score Generation   | Generate overall dataset quality score             |
-| 🔍 Missing Value Detection    | Identify incomplete records and columns            |
-| 🧹 Duplicate Record Detection | Detect duplicate rows and redundancy               |
-| 🏷️ Data Type Validation      | Validate datatype consistency                      |
-| 📈 Statistical Profiling      | Generate descriptive statistics                    |
-| ⚠️ Outlier Detection          | Detect abnormal data points                        |
-| 🧠 Recommendation Engine      | Provide actionable improvement suggestions         |
-| 📄 PDF Report Generation      | Download professional analysis reports             |
-| 📊 Interactive Dashboard      | Real-time visual analytics                         |
-| 📉 Data Visualization         | Graphical quality insights                         |
-| ⚡ Fast Processing             | Efficient backend processing using FastAPI         |
+* 📂 CSV Dataset Upload
+* 📊 Dataset Quality Score Generation
+* 🔍 Missing Value Detection
+* 🧹 Duplicate Record Detection
+* 🏷️ Data Type Validation
+* ⚠️ Outlier Detection
+* 📈 Statistical Profiling
+* 💡 Automated Recommendations
+* 📄 PDF Report Generation
+* 📊 Interactive Dashboard
+* ⚡ FastAPI-Powered Backend
+* 🎨 Modern React User Interface
 
 ---
 
-## 🏗️ System Architecture
+## 🏗️ Architecture
 
 ```text
-                        ┌────────────────────┐
-                        │   React Frontend   │
-                        └─────────┬──────────┘
-                                  │
-                                  ▼
-                        ┌────────────────────┐
-                        │   FastAPI Backend  │
-                        └─────────┬──────────┘
-                                  │
-         ┌──────────────┬─────────┼─────────┬──────────────┐
-         ▼              ▼         ▼         ▼              ▼
+Frontend (React + Vite)
+          │
+          ▼
+Backend API (FastAPI)
+          │
+ ┌────────┼────────┐
+ ▼        ▼        ▼
 
- Missing Value   Duplicate   Datatype   Outlier   Statistics
-    Checker       Checker     Checker    Checker    Profiler
+Missing  Duplicate  Datatype
+Check    Check      Validation
 
-         └──────────────┬─────────┬──────────────┘
-                        ▼
-                Quality Score Engine
-                        ▼
-              Recommendation Engine
-                        ▼
-                PDF Report Generator
-                        ▼
-                 Dashboard Results
+ ▼
+Outlier Detection
+
+ ▼
+Statistical Profiling
+
+ ▼
+Quality Score Engine
+
+ ▼
+Recommendation Engine
+
+ ▼
+PDF Report Generation
 ```
 
 ---
 
-## 🚀 Technology Stack
+## 🛠️ Tech Stack
 
 ### Frontend
 
 * React.js
 * Vite
-* JavaScript (ES6+)
-* HTML5
-* CSS3
+* JavaScript
+* CSS
 
 ### Backend
 
@@ -114,15 +93,11 @@ Dataset Quality Checker addresses these challenges by providing an automated and
 * Pandas
 * NumPy
 
-### Data Visualization
+### Visualization
 
 * Matplotlib
 
-### Reporting
-
-* PDF Report Generation
-
-### Development Tools
+### Tools
 
 * Git
 * GitHub
@@ -136,19 +111,14 @@ Dataset Quality Checker addresses these challenges by providing an automated and
 Dataset-Quality-Checker
 │
 ├── frontend
-│   ├── dist
 │   ├── src
 │   │   ├── components
 │   │   ├── pages
 │   │   ├── layouts
-│   │   ├── services
 │   │   ├── hooks
-│   │   ├── App.jsx
-│   │   └── main.jsx
-│   │
+│   │   └── services
 │   ├── package.json
-│   ├── vite.config.js
-│   └── index.html
+│   └── vite.config.js
 │
 ├── backend
 │   ├── datasets
@@ -162,7 +132,6 @@ Dataset-Quality-Checker
 │   │   ├── cleaner.py
 │   │   ├── datatype_checker.py
 │   │   ├── duplicate_checker.py
-│   │   ├── history_store.py
 │   │   ├── missingchecker.py
 │   │   ├── outlier_checker.py
 │   │   ├── pdf_report.py
@@ -171,8 +140,7 @@ Dataset-Quality-Checker
 │   │   └── statistics_checker.py
 │   │
 │   ├── main.py
-│   ├── requirements.txt
-│   └── dataset_report.pdf
+│   └── requirements.txt
 │
 └── README.md
 ```
@@ -181,15 +149,15 @@ Dataset-Quality-Checker
 
 ## ⚙️ How It Works
 
-### Step 1 — Upload Dataset
+### 1. Upload Dataset
 
-Users upload CSV datasets through the React frontend.
+Users upload a CSV dataset through the web interface.
 
-### Step 2 — Backend Processing
+### 2. Dataset Processing
 
-FastAPI receives and validates the dataset.
+The FastAPI backend validates and processes the uploaded file.
 
-### Step 3 — Quality Assessment
+### 3. Quality Assessment
 
 The system performs:
 
@@ -199,107 +167,46 @@ The system performs:
 * Outlier Detection
 * Statistical Profiling
 
-### Step 4 — Quality Score Generation
+### 4. Score Generation
 
-A dataset quality score is calculated based on multiple quality metrics.
+A quality score is calculated using multiple dataset quality metrics.
 
-### Step 5 — Recommendation Generation
+### 5. Recommendation Generation
 
-The Recommendation Engine suggests data cleaning and improvement actions.
+The platform generates suggestions to improve dataset quality.
 
-### Step 6 — Visualization & Reporting
+### 6. Reporting
 
 Users receive:
 
-* Dashboard Analytics
-* Charts
+* Interactive Dashboard
 * Quality Metrics
+* Visual Analytics
 * Downloadable PDF Reports
 
 ---
 
 ## 📈 Analysis Modules
 
-### 🔍 Missing Value Checker
-
-Identifies:
-
-* Missing entries
-* Null values
-* Completeness percentage
-
-### 🧹 Duplicate Checker
-
-Detects:
-
-* Duplicate rows
-* Repeated observations
-* Dataset redundancy
-
-### 🏷️ Datatype Checker
-
-Validates:
-
-* Column datatypes
-* Data consistency
-* Schema correctness
-
-### ⚠️ Outlier Checker
-
-Finds:
-
-* Statistical anomalies
-* Extreme values
-* Data distribution issues
-
-### 📊 Statistics Profiler
-
-Generates:
-
-* Mean
-* Median
-* Standard Deviation
-* Variance
-* Distribution Metrics
-
-### 🧠 Recommendation Engine
-
-Provides:
-
-* Data cleaning suggestions
-* Quality improvement actions
-* Optimization recommendations
+| Module                | Purpose                         |
+| --------------------- | ------------------------------- |
+| Missing Value Checker | Detect incomplete records       |
+| Duplicate Checker     | Identify duplicate rows         |
+| Datatype Validator    | Validate schema consistency     |
+| Outlier Checker       | Detect abnormal values          |
+| Statistical Profiler  | Generate descriptive statistics |
+| Quality Score Engine  | Calculate dataset quality       |
+| Recommendation Engine | Suggest improvements            |
+| PDF Generator         | Export professional reports     |
 
 ---
 
-## 📄 Sample Outputs
-
-The platform generates:
-
-✅ Dataset Quality Score
-
-✅ Missing Value Summary
-
-✅ Duplicate Record Summary
-
-✅ Datatype Validation Report
-
-✅ Outlier Detection Results
-
-✅ Statistical Analysis
-
-✅ Recommendation Report
-
-✅ Downloadable PDF Report
-
----
-
-## 💻 Local Installation
+## 💻 Installation
 
 ### Clone Repository
 
 ```bash
-git clone https://github.com/your-username/Dataset-Quality-Checker.git
+git clone https://github.com/YOUR_USERNAME/Dataset-Quality-Checker.git
 
 cd Dataset-Quality-Checker
 ```
@@ -318,7 +225,7 @@ pip install -r requirements.txt
 uvicorn main:app --reload
 ```
 
-Backend Server:
+Backend:
 
 ```text
 http://127.0.0.1:8000
@@ -334,7 +241,7 @@ npm install
 npm run dev
 ```
 
-Frontend Server:
+Frontend:
 
 ```text
 http://localhost:5173
@@ -344,103 +251,71 @@ http://localhost:5173
 
 ## 🌐 Deployment
 
-### Frontend Deployment
+### Frontend
 
-* Netlify
+Deploy on Netlify
 
-### Backend Deployment
+### Backend
 
-* Render
-* Railway
+Deploy on Render or Railway
 
 ---
 
-## 📊 Use Cases
+## 🎯 Use Cases
 
-### Machine Learning
-
-Validate datasets before model training.
-
-### Data Analytics
-
-Ensure data quality for reliable insights.
-
-### Business Intelligence
-
-Improve dashboard and reporting accuracy.
-
-### Academic Research
-
-Validate datasets for research projects.
-
-### Data Engineering
-
-Perform quality checks before ETL pipelines.
+* Machine Learning Data Preparation
+* Data Analytics Projects
+* Business Intelligence Workflows
+* Academic Research
+* Data Engineering Pipelines
+* Dataset Auditing
 
 ---
 
 ## 🔮 Future Enhancements
 
 * Excel File Support
-* Multi-File Analysis
-* Automated Data Cleaning
-* AI-Powered Suggestions
+* AI-Powered Cleaning Suggestions
+* Automated Data Repair
 * Database Integration
 * User Authentication
 * Cloud Storage Support
-* Advanced Profiling Metrics
-* Data Drift Detection
-* Real-Time Monitoring
-
----
-
-## 🏆 Project Highlights
-
-✔ Full Stack Development
-
-✔ FastAPI Backend
-
-✔ React Dashboard
-
-✔ Data Quality Assessment
-
-✔ Statistical Profiling
-
-✔ PDF Report Generation
-
-✔ Data Visualization
-
-✔ Machine Learning Ready
-
-✔ Production Deployment
+* Advanced Dataset Profiling
 
 ---
 
 ## 👨‍💻 Author
 
+<div align="center">
+
 ### Savan Patel
 
-Aspiring Data Scientist | AI/ML Engineer | Full-Stack Developer
+**Aspiring Data Scientist | AI/ML Engineer | Full-Stack Developer**
 
-Passionate about building practical AI, Machine Learning, Data Analytics, and Data Engineering solutions that solve real-world problems.
+Passionate about building practical AI, Machine Learning, Data Analytics, and Data Engineering solutions.
 
-### Connect With Me
+<p align="center">
+  <a href="https://github.com/YOUR_GITHUB_USERNAME">
+    <img src="https://img.shields.io/badge/GitHub-Profile-black?logo=github" />
+  </a>
 
-* LinkedIn: https://www.linkedin.com/in/savan-patel-777aa3323?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app
-* GitHub: https://github.com/
+  <a href="https://www.linkedin.com/in/savan-patel-777aa3323/">
+    <img src="https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin" />
+  </a>
+</p>
+
+</div>
 
 ---
 
 ## ⭐ Support
 
-If you found this project useful, consider giving it a ⭐ on GitHub.
-
-It helps others discover the project and supports future development.
+If you found this project useful, consider giving it a star on GitHub.
 
 ---
 
 ## 📜 License
 
-This project is developed for educational, research, and portfolio purposes.
+This project is intended for educational, research, and portfolio purposes.
 
 © 2026 Savan Patel. All Rights Reserved.
