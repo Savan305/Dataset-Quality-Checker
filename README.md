@@ -426,7 +426,7 @@ Passionate about building practical AI, Machine Learning, Data Analytics, and Da
 
 ### Connect With Me
 
-* LinkedIn: [Add Your LinkedIn URL]
+* LinkedIn: https://www.linkedin.com/in/savan-patel-777aa3323?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app
 * GitHub: https://github.com/
 
 ---
