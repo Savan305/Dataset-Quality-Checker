@@ -206,7 +206,7 @@ Users receive:
 ### Clone Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/Dataset-Quality-Checker.git
+git clone https://github.com/Savan305/Dataset-Quality-Checker.git
 
 cd Dataset-Quality-Checker
 ```
