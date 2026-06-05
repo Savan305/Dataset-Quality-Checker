@@ -427,7 +427,7 @@ Passionate about building practical AI, Machine Learning, Data Analytics, and Da
 ### Connect With Me
 
 * LinkedIn: [Add Your LinkedIn URL]
-* GitHub: [Add Your GitHub URL]
+* GitHub: https://github.com/
 
 ---
 
